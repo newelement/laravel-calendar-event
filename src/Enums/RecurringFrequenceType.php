@@ -1,10 +1,10 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Enums;
+namespace Newelement\LaravelCalendarEvent\Enums;
 
 /**
  * Class RecurringFrequenceType
- * @package T1k3\LaravelCalendarEvent\Enums
+ * @package Newelement\LaravelCalendarEvent\Enums
  */
 abstract class RecurringFrequenceType
 {

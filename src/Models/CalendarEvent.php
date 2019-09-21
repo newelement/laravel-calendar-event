@@ -1,14 +1,14 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Models;
+namespace Newelement\LaravelCalendarEvent\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
-use T1k3\LaravelCalendarEvent\Enums\RecurringFrequenceType;
-use T1k3\LaravelCalendarEvent\Interfaces\CalendarEventInterface;
-use T1k3\LaravelCalendarEvent\Interfaces\PlaceInterface;
-use T1k3\LaravelCalendarEvent\Interfaces\UserInterface;
+use Newelement\LaravelCalendarEvent\Enums\RecurringFrequenceType;
+use Newelement\LaravelCalendarEvent\Interfaces\CalendarEventInterface;
+use Newelement\LaravelCalendarEvent\Interfaces\PlaceInterface;
+use Newelement\LaravelCalendarEvent\Interfaces\UserInterface;
 
 /**
  * Class CalendarEvent

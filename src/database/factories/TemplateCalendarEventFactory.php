@@ -2,7 +2,7 @@
 
 use Carbon\Carbon;
 use Faker\Generator as Faker;
-use T1k3\LaravelCalendarEvent\Models\TemplateCalendarEvent;
+use Newelement\LaravelCalendarEvent\Models\TemplateCalendarEvent;
 
 $factory = app()->make(\Illuminate\Database\Eloquent\Factory::class);
 

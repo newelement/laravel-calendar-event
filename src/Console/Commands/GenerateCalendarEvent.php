@@ -1,19 +1,19 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Console\Commands;
+namespace Newelement\LaravelCalendarEvent\Console\Commands;
 
 
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
-use T1k3\LaravelCalendarEvent\Enums\RecurringFrequenceType;
-use T1k3\LaravelCalendarEvent\Interfaces\CalendarEventInterface;
-use T1k3\LaravelCalendarEvent\Models\CalendarEvent;
-use T1k3\LaravelCalendarEvent\Models\TemplateCalendarEvent;
+use Newelement\LaravelCalendarEvent\Enums\RecurringFrequenceType;
+use Newelement\LaravelCalendarEvent\Interfaces\CalendarEventInterface;
+use Newelement\LaravelCalendarEvent\Models\CalendarEvent;
+use Newelement\LaravelCalendarEvent\Models\TemplateCalendarEvent;
 
 /**
  * Class GenerateCalendarEvent
- * @package T1k3\LaravelCalendarEvent\Console\Commands
+ * @package Newelement\LaravelCalendarEvent\Console\Commands
  */
 class GenerateCalendarEvent extends Command
 {
@@ -119,10 +119,10 @@ class GenerateCalendarEvent extends Command
 
                 Log::info(
                     sprintf('
-                        Generated CalendarEvent from Console: 
-                        template_calendar_event_id: %s, 
-                        calendar_event_id: %s, 
-                        start_datetime: %s, 
+                        Generated CalendarEvent from Console:
+                        template_calendar_event_id: %s,
+                        calendar_event_id: %s,
+                        start_datetime: %s,
                         end_datetime: %s',
                         $calendarEvent->template_calendar_event_id,
                         $calendarEvent->id,

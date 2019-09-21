@@ -1,6 +1,6 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Interfaces;
+namespace Newelement\LaravelCalendarEvent\Interfaces;
 
 
 interface TemplateCalendarEventInterface

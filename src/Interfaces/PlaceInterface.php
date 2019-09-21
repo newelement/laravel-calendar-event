@@ -1,11 +1,11 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Interfaces;
+namespace Newelement\LaravelCalendarEvent\Interfaces;
 
 
 /**
  * Interface PlaceInterface
- * @package T1k3\LaravelCalendarEvent\Interfaces
+ * @package Newelement\LaravelCalendarEvent\Interfaces
  */
 interface PlaceInterface
 {

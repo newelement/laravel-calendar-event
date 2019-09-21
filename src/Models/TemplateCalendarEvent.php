@@ -1,19 +1,19 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Models;
+namespace Newelement\LaravelCalendarEvent\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Query\Builder;
-use T1k3\LaravelCalendarEvent\Enums\RecurringFrequenceType;
-use T1k3\LaravelCalendarEvent\Interfaces\PlaceInterface;
-use T1k3\LaravelCalendarEvent\Interfaces\TemplateCalendarEventInterface;
-use T1k3\LaravelCalendarEvent\Interfaces\UserInterface;
+use Newelement\LaravelCalendarEvent\Enums\RecurringFrequenceType;
+use Newelement\LaravelCalendarEvent\Interfaces\PlaceInterface;
+use Newelement\LaravelCalendarEvent\Interfaces\TemplateCalendarEventInterface;
+use Newelement\LaravelCalendarEvent\Interfaces\UserInterface;
 
 /**
  * Class TemplateCalendarEvent
- * @package T1k3\LaravelCalendarEvent\Models
+ * @package Newelement\LaravelCalendarEvent\Models
  */
 class TemplateCalendarEvent extends AbstractModel implements TemplateCalendarEventInterface
 {
@@ -108,7 +108,7 @@ class TemplateCalendarEvent extends AbstractModel implements TemplateCalendarEve
             'start_datetime' => $startDate,
             'end_datetime'   => Carbon::parse( $endDate->format('Y-m-d') . ' ' . $this->end_datetime->format('H:i:s') ),
         ]);
-        
+
         $calendarEvent->template()->associate($this);
         $calendarEvent->save();
 

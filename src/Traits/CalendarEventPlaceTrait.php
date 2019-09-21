@@ -1,14 +1,14 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Traits;
+namespace Newelement\LaravelCalendarEvent\Traits;
 
 
-use T1k3\LaravelCalendarEvent\Models\CalendarEvent;
-use T1k3\LaravelCalendarEvent\Models\TemplateCalendarEvent;
+use Newelement\LaravelCalendarEvent\Models\CalendarEvent;
+use Newelement\LaravelCalendarEvent\Models\TemplateCalendarEvent;
 
 /**
  * Trait PlaceTemplateCalendarEventTrait
- * @package T1k3\LaravelCalendarEvent\Traits
+ * @package Newelement\LaravelCalendarEvent\Traits
  */
 trait CalendarEventPlaceTrait
 {

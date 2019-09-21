@@ -1,10 +1,10 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent;
+namespace Newelement\LaravelCalendarEvent;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use T1k3\LaravelCalendarEvent\Console\Commands\GenerateCalendarEvent;
+use Newelement\LaravelCalendarEvent\Console\Commands\GenerateCalendarEvent;
 
 /**
  * Class ServiceProvider

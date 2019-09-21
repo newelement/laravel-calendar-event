@@ -1,13 +1,13 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Exceptions;
+namespace Newelement\LaravelCalendarEvent\Exceptions;
 
 
 use Exception;
 
 /**
  * Class CalendarEventException
- * @package T1k3\LaravelCalendarEvent\Exceptions
+ * @package Newelement\LaravelCalendarEvent\Exceptions
  */
 abstract class CalendarEventException extends Exception
 {

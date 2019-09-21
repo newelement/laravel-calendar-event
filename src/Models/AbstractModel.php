@@ -1,6 +1,6 @@
 <?php
 
-namespace T1k3\LaravelCalendarEvent\Models;
+namespace Newelement\LaravelCalendarEvent\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
@@ -8,7 +8,7 @@ use Illuminate\Database\Query\Builder;
 
 /**
  * Class AbstractModel
- * @package T1k3\LaravelCalendarEvent\Models
+ * @package Newelement\LaravelCalendarEvent\Models
  */
 abstract class AbstractModel extends Model
 {
