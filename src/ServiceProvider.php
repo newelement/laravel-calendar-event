@@ -8,7 +8,7 @@ use Newelement\LaravelCalendarEvent\Console\Commands\GenerateCalendarEvent;
 
 /**
  * Class ServiceProvider
- * @package T1k3\LaravelCalendarEvent
+ * @package Newelement\LaravelCalendarEvent
  */
 class ServiceProvider extends BaseServiceProvider
 {

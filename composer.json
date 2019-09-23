@@ -27,7 +27,7 @@
       "src/database"
     ],
     "psr-4": {
-      "T1k3\\LaravelCalendarEvent\\": "src"
+      "Newelement\\LaravelCalendarEvent\\": "src"
     }
   },
   "autoload-dev": {
