@@ -197,20 +197,21 @@ class CalendarEvent extends AbstractModel implements CalendarEventInterface
         $endOfRecurring = $date->lastOfMonth()->hour(23)->minute(59)->second(59);
         $month = str_pad($endOfRecurring->month, 2, '0', STR_PAD_LEFT);
         $templateCalendarEvents = self::getMonthlyEvents($endOfRecurring);
-
+       
         $calendarEvents = collect();
         foreach ($templateCalendarEvents as $templateCalendarEvent) {
+            
             $calendarEvents = $calendarEvents->merge(
                 $templateCalendarEvent->events()->whereMonth('start_datetime', $month)->get()
             );
-
+           
             $calendarEventTmpLast = $templateCalendarEvent->events()->orderBy('start_datetime', 'desc')->first();
             $dateNext = self::getNextDateFromTemplate($templateCalendarEvent, $calendarEventTmpLast, $date);
-
+            
             while ($dateNext !== null && $dateNext->year == $date->year && $dateNext->month <= (int)$month) {
-                $diffInDays = $templateCalendarEvent->start_datetime->diffInDays($templateCalendarEvent->end_datetime);
+                $diffInDays = $templateCalendarEvent->start_datetime->diffInMinutes($templateCalendarEvent->end_datetime);
                 $dateNextEnd = clone($dateNext);
-                $dateNextEnd = $dateNextEnd->addDays($diffInDays);
+                $dateNextEnd = $dateNextEnd->addMinutes($diffInDays);
 
                 $calendarEventNotExists = (new CalendarEvent())->make([
                     'start_datetime' => $dateNext,
