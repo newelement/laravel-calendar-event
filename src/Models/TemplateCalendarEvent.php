@@ -33,6 +33,7 @@ class TemplateCalendarEvent extends AbstractModel implements TemplateCalendarEve
         'frequence_number_of_recurring',
         'frequence_type_of_recurring',
         'is_public',
+        'place_id'
     ];
 
     /**
@@ -89,9 +90,7 @@ class TemplateCalendarEvent extends AbstractModel implements TemplateCalendarEve
      */
     public function place()
     {
-//        TODO If the config is null then you can not use ->place (LogicException), just ->place()
-        $class = config('calendar-event.place.model');
-        return $class ? $this->belongsTo($class) : null;
+        return $this->belongsTo('\Newelement\Neutrino\Models\Place');
     }
 
     /**
